@@ -1,7 +1,7 @@
 {%set name = "requests-oauthlib" %}
-{%set version = "0.6.1" %}
+{%set version = "0.7.0" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "905306080ec0cc6b3c65c8101f471fccfdb9994c16dd116524fd3fc0790d46d7" %}
+{%set hash_val = "198807c592b75438485c890f0403b1a8e363c86be1a87da687be18991a6850b0" %}
 
 package:
   name: {{ name }}
