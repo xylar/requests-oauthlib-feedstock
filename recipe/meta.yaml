@@ -2,6 +2,7 @@
 {%set version = "0.7.0" %}
 {%set hash_type = "sha256" %}
 {%set hash_val = "198807c592b75438485c890f0403b1a8e363c86be1a87da687be18991a6850b0" %}
+{%set build_num = "1" %}
 
 package:
   name: {{ name }}
@@ -13,7 +14,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 0
+  number: {{ build_num }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -36,7 +37,10 @@ test:
 about:
   home: https://github.com/requests/requests-oauthlib
   license: ISC
+  license_file: LICENSE
   summary: 'OAuthlib authentication support for Requests.'
+  dev_url: https://github.com/requests/requests-oauthlib
+  doc_url: https://github.com/requests/requests-oauthlib
 
 extra:
   recipe-maintainers:
